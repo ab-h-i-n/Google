@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows:5% 1fr 10%;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    padding: 0 2rem 0  0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.5rem;
+}
+.apps{
+    display: flex;
+    justify-content: space-evenly;
+    gap:.2rem
+}
+.l1,.l2,.l3{
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color:grey;
+}
+.app{
+   display: flex;
+   flex-flow:column nowrap;
+   gap:2px;
+}
+header button{
+    margin-top: .5rem;
+    color: white;
+    background-color: #1a73e8;
+    border: none;
+    padding: .7rem 1.7rem;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+}
+header button:hover{
+    background-color: #165cb8;
+    box-shadow: 1px 1px 3px #165cb8;
+}
+.links a{
+    margin:.3rem;
+    text-decoration: none;
+    color: grey;
+    font-size: .8rem;
+}
+footer{
+    background-color: rgb(228, 228, 228);
+    display: grid;
+}
+.india{
+    padding: .5rem;
+    align-items: center;
+    display: flex;
+    color: grey;
+    border-bottom: 1px solid rgb(197, 197, 197);
+}
+.bottom{
+    font-size: .8rem;
+    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.about, .terms{
+    display: flex;
+    gap: 1rem;
+}
+.bottom a{
+    text-decoration: none;
+    color: grey;
+}
+.bottom a:hover, .links a:hover{
+    text-decoration: underline;
+} 
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lang{
+    margin-top: 1rem;
+    display:inline;
+    font-size: .8rem;
+}
+.p{
+    text-decoration: none;
+    color: rgb(70, 70, 70);
+}
+.lang a{
+    margin:.3rem;
+    text-decoration: none;
+}
+.lang a:hover{
+    text-decoration: underline;
+}
+.search{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sbuttons button{
+    margin: 1rem .5rem;
+    color:rgb(71, 71, 71);
+    border: none;
+    padding: .7rem 1.7rem;
+    font-weight: 500;
+    border-radius: 4px;
+}
+.sbuttons button:hover{
+    border: 1px solid rgb(172, 172, 172);
+}
+.sbar{
+    margin: 1.5rem 0 .5rem 0;
+    border:1px solid rgb(211, 211, 211);
+    display: flex;
+    justify-content: center;
+    padding: 0 .5rem;
+    /* background-color: #1a73e8; */
+    border-radius: 25px;
+    width: 65vw;
+}
+.sbar:hover{
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.178);
+}
+input{
+    border: none;
+    border-radius: 25px;
+    height:43px;
+    width: 90%;
+    outline: none;
+    
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+span.material-symbols-outlined{
+    display: flex;
+    align-items: center;;
+    font-size: 1.3rem;
+}
+
+#sc,#cam{
+    margin: 0 1rem;
+}
